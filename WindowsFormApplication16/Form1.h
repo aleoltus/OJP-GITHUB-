@@ -51,6 +51,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::TextBox^  licz2;
 	private: System::Windows::Forms::TextBox^  wyn;
 	private: System::Windows::Forms::Label^  symbol;
+	private: System::Windows::Forms::Button^  button1;
 
 
 
@@ -78,6 +79,7 @@ namespace WindowsFormApplication1 {
 			this->licz2 = (gcnew System::Windows::Forms::TextBox());
 			this->wyn = (gcnew System::Windows::Forms::TextBox());
 			this->symbol = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// dod
@@ -175,11 +177,21 @@ namespace WindowsFormApplication1 {
 			this->symbol->TabIndex = 9;
 			this->symbol->Text = L"symbol";
 			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(375, 254);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(107, 29);
+			this->button1->TabIndex = 10;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(617, 392);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->symbol);
 			this->Controls->Add(this->wyn);
 			this->Controls->Add(this->licz2);
