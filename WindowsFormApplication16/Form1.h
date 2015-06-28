@@ -234,7 +234,7 @@ namespace WindowsFormApplication1 {
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
 	private: System::Void checkBox1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		this->symbol->Text = "+";
+		this->symbol->Text = "/";
 
 	}
 private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
@@ -247,9 +247,9 @@ private: System::Void wynik_Click(System::Object^  sender, System::EventArgs^  e
 	b = Double::Parse(licz2->Text);
 	licz = Char::Parse(symbol->Text);
 	switch (licz){
-	case 43:c = a + b; break;
-	case 45:c = a - b; break;
-	case 42:c = a * b; break;
+	case 43:c = a / b; break;
+	case 45:c = a / b; break;
+	case 42:c = a / b; break;
 	case 47:c = a / b; break;
 	}
 	this->wyn->Text = c.ToString();
@@ -257,10 +257,10 @@ private: System::Void wynik_Click(System::Object^  sender, System::EventArgs^  e
 private: System::Void textBox1_TextChanged_1(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void ode_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-	this->symbol->Text = "-";
+	this->symbol->Text = "/";
 }
 private: System::Void mno_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-	this->symbol->Text = "*";
+	this->symbol->Text = "/";
 }
 private: System::Void dzie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 	this->symbol->Text = "/";
